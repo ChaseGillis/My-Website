@@ -1,5 +1,84 @@
+/* Default light theme */
+:root {
+  --background-color: #fff5ba;
+  --text-color: #000000;
+  --link-color: #fff;
+  --footer-background-color: #ceccccd4;
+}
+
+/* Dark theme */
+.dark-mode {
+  --background-color: #1d1c1c;  /* Dark gray */
+  --text-color: #ffffff;  /* White text */
+  --footer-background-color: #838383;  /* Slightly lighter dark gray for footer */
+}
+
+
+h2 {
+  font-family: 'Poppins, sans-serif';
+}
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+.INTRO {
+  margin-inline: 35%;
+  position: relative;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+  letter-spacing: 7px;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  animation: typewriter 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+.dark-mode .INTRO {
+  color: #ffffff;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+p {
+  font-family: 'Poppins, sans-serif';
+}
+
+body {
+  font-family: 'Poppins, sans-serif';
+  background-color: var(--background-color); /* Instead of a hardcoded value */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-color); /* Use variable for text color */
+  margin: 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--text-color);
   text-align: center;
+  background-color: var(--background-color);
 }
 
 .App-logo {
@@ -7,32 +86,434 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: var(--footer-background-color); /* Instead of a hardcoded value */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text-color); /* Use variable for text color */
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--link-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul {
+  list-style-type: none; /* This removes bullet points */
+  padding: 0;
+  margin: 0;
+  background-color: var(--footer-background-color);
+}
+
+/* External or internal CSS */
+.img-small {
+  align-items: left;
+  padding-inline: 10px;
+  width: 400px; /* or any other size */
+  height: auto;
+}
+
+nav {
+  font-weight: bold;
+  text-align: center;  /* Centers the ul inside the nav */
+}
+
+.logo {
+  height: 40px;
+  filter: invert(100%); 
+}
+.dark-mode .logo {
+  filter: invert(0%)
+}
+
+nav ul {
+  list-style-type: none;  /* Removes bullet points */
+  padding: 0;  /* Removes padding */
+  margin: 0;  /* Removes default margin */
+  display: flex;  /* Flexbox to make the items horizontal */
+  justify-content: center;  /* Centers items horizontally */
+  align-items: center;  /* Align items vertically */
+  box-sizing: border-box;
+}
+
+
+nav button {
+  font-family: 'Poppins, sans-serif';
+  
+  background: none;  /* Removes background */
+  border: none;  /* Removes border */
+  cursor: pointer;  /* Changes cursor to pointer to indicate clickable */
+  color: var(--link-color);  /* Inherits color from parent for consistency */
+}
+.dark-mode nav button {
+  filter: invert(100%); 
+}
+
+nav ion-icon {
+  font-size: 2.5em;  /* Adjust the size as needed */
+  vertical-align: middle;  /* Keeps icon aligned with adjacent text */
+  filter: invert(100%); 
+}
+nav ion-icon:hover {
+  font-size: 3em;  /* Adjust the size as needed */
+}
+
+nav li {
+  margin: 20px 80px;  /* Adds horizontal spacing between items */
+}
+
+li button {
+  font-weight: bold;
+  text-decoration: none;  /* Removes underline from links */
+  color: var(--link-color);  /* Sets text color for links */
+  font-size: 1em;
+  filter: invert(100%); 
+}
+.dark-mode li button {
+  filter: invert(0%);
+}
+
+li button:hover {
+  font-size: 1.2em;
+}
+
+nav a {
+  text-decoration: none;  /* Removes underline from links */
+  color: var(--link-color);  /* Sets text color for links */
+  font-size: 1em;
+  filter: invert(100%); 
+}
+.dark-mode nav a {
+  filter: invert(0%); 
+}
+
+nav a:hover {
+  font-size: 1.2em;
+}
+
+
+footer .footer-content {
+  background-color: var(--footer-background-color);
+  list-style-type: none;  /* Removes bullet points */
+  padding-inline: 35px;  /* Removes padding */
+  margin: 0;  /* Removes default margin */
+  display: flex;  /* Flexbox to make the items horizontal */
+  justify-content: center;  /* Centers items horizontally */
+  align-items: center;  /* Align items vertically */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+footer .footer-content button {
+  background: none;
+  border: none;  /* Removes border */
+  cursor: pointer;  /* Changes cursor to pointer to indicate clickable */
+  color: var(--link-color);  /* Inherits color from parent for consistency */
+  padding-inline: 75px;
+  font-size: 1.5em;
+  filter: invert(100%); 
+}
+.dark-mode footer .footer-content button {
+  filter: invert(0%); 
+}
+
+footer .footer-content button:hover {
+  font-size: 1.7em; 
+}
+
+footer .footer-content a {
+  color: var(--link-color); /* Light green, or choose your own color */
+  padding-inline: 75px;
+  font-size: 1.5em;
+  filter: invert(100%); 
+}
+.dark-mode footer .footer-content a {
+  color: var(--link-color); /* Light green, or choose your own color */
+  padding-inline: 75px;
+  font-size: 1.5em;
+  filter: invert(0%); 
+}
+
+footer .footer-content a:hover {
+  font-size: 1.7em; 
+}
+
+
+.about-container {
+  display: flex;
+  align-items: center; /* This will vertically center align the items in the container */
+  justify-content: center; /* Horizontally center the content */
+  gap: 20px; /* Adds space between the image and the text */
+}
+@keyframes coolThing{
+  0% {
+    transform: rotateX(30deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotateX(0deg);
+  }
+
+}
+.profile-image img {
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio of the image */
+  border-radius: 30px; 
+  padding-inline: 0;
+  padding: 0;
+  border: 4px solid black;
+}
+.dark-mode .profile-image img {
+  border: 3px solid white;
+}
+.about-text {
+  max-width: 600px; /* Limits the width of the text content */
+}
+
+.TechStack {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.TechStack ion-icon {
+  font-size: 75px; /* Larger icons */
+  margin-right: 20px; /* Space between icons */
+}
+.TechStack img {
+  width: 75px;
+  height: 75px; 
+  margin-right: 10px;
+}
+.dark-mode .TechStack img {
+  filter: invert(100%); 
+}
+.resume-tech-container img {
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.test h2 {
+  display: flex;
+  align-items: center; /* This will vertically center align the items in the container */
+  justify-content: center; /* Horizontally center the content */
+  gap: 20px; /* Adds space between the image and the text */
+}
+
+.fisherman {
+  width: 200px;
+  height: auto;
+  left: 32.5%;
+  top: -35px;
+  position: absolute;
+  z-index: 1;
+}
+
+.line {
+  content: '';
+  position: absolute;
+  width: 2px; /* Make the line very thin */
+  background-color: #000000;
+  top: -21px;
+  left: 50%;
+  animation: growShrinkLine 20s infinite;
+  z-index: 1;
+}
+
+@keyframes growShrinkLine {
+  0% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
   }
 }
+
+.fish {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100px;
+  transform: rotate(90deg);
+  transform-origin: 0% 0%;
+  animation: reelFish 15s infinite, shake 1s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(90deg);
+    transform-origin: 0% 50%;
+  }
+  25% {
+    transform: rotate(110deg);
+    transform-origin: 0% 50%;
+  }
+  50% {
+    transform: rotate(90deg);
+    transform-origin: 0% 50%;
+  }
+  75% {
+    transform: rotate(70deg);
+    transform-origin: 0% 50%;
+  }
+  100% {
+    transform: rotate(90deg);
+    transform-origin: 0% 50%;
+  }
+}
+@keyframes reelFish {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: 0%; /* Stay at the bottom for the first 10 seconds */
+  }
+  100% {
+    bottom: 99.5%; /* Move up during the next 5 seconds */
+  }
+}
+
+
+.dark-mode .line {
+  background-color: #ffffff; /* Keeps the timeline line color white in dark mode */
+}
+.dark-mode .fish {
+  filter:invert(100%);
+}
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 90%;
+}
+
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: #333;
+  width: 50%;
+  border-radius: 30px;
+}
+
+.timeline-container.left {
+  margin-top: -50px;
+  left: 60px;
+  max-width: 400px;
+  max-height: fit-content;
+}
+.timeline-container.left h3{
+  color: #fff;
+}
+.timeline-container.left h2{
+  color: #fff;
+}
+.timeline-container.right h3{
+  color: #fff;
+}
+.timeline-container.right h2{
+  color: #fff;
+}
+.timeline-container.right {
+  margin-top: -180px;
+  left: 595px;
+  max-width: 400px;
+  max-height: fit-content;
+}
+.timeline-container.left p {
+  text-align: left;
+  color: #fff;
+}
+
+.timeline-container.right p {
+  text-align: left;
+  color: #fff;
+}
+
+.exp h2{
+  top:106px;
+  left:100px;
+  position:absolute;
+  z-index: 1;
+  color: #000000;
+  padding-bottom: 175px;
+}
+.dark-mode .exp h2{
+  color: #fff;
+}
+
+.content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  --text-color: #fff;
+}
+
+.TechStack {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.test2 img {
+  margin-top: 30px;
+  margin-bottom:30px;
+  width:100px ;
+  height:auto;
+  animation: coolThing 2s infinite;
+}
+.dark-mode .test2 img {
+  filter:invert(100%);
+}
+
+.projimg {
+  position: relative;
+}
+
+.projimg img {
+  position: absolute;
+}
+
+.img1 {
+  top: -120px; /* Adjusted value */
+  left: 90px;
+  width: 400px;
+  height:150px;
+}
+
+.img2 {
+  top: -120px; /* Adjusted value */
+  left: 760px; /* Adjusted value */
+  width: 400px;
+  height:150px;
+}
+
+.dark-mode .img1 {
+  filter:invert(100%);
+}
+
+.dark-mode .img2 {
+  filter:invert(100%);
+}
+
+.pparse {
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 540px;
+  border-radius: 30px; 
+  border: 2px solid black;
+}
+.dark-mode .pparse {
+  border: 2px solid white;
+}
+.projimg p {
+  width: 600px;
+}
+
