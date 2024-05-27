@@ -323,7 +323,7 @@ footer .footer-content a:hover {
   background-color: #000000;
   top: -21px;
   left: 50%;
-  animation: growShrinkLine 20s infinite;
+  animation: growShrinkLine 15s infinite;
   z-index: 1;
 }
 
@@ -332,7 +332,7 @@ footer .footer-content a:hover {
     height: 0%;
   }
   50% {
-    height: 100%;
+    height: 99.12%;
   }
   100% {
     height: 0%;
@@ -346,18 +346,18 @@ footer .footer-content a:hover {
   width: 100px;
   transform: rotate(90deg);
   transform-origin: 0% 0%;
-  animation: reelFish 15s infinite, shake 1s infinite;
+  animation: reelFish 15s infinite, shake 15s infinite;
 }
 @keyframes shake {
   0% {
-    transform: rotate(90deg);
-    transform-origin: 0% 50%;
-  }
-  25% {
-    transform: rotate(100deg);
+    transform: rotate(0deg);
     transform-origin: 0% 50%;
   }
   50% {
+    transform: rotate(0deg);
+    transform-origin: 0% 50%;
+  }
+  51% {
     transform: rotate(90deg);
     transform-origin: 0% 50%;
   }
@@ -366,16 +366,25 @@ footer .footer-content a:hover {
     transform-origin: 0% 50%;
   }
   100% {
-    transform: rotate(90deg);
+    transform: rotate(95deg);
     transform-origin: 0% 50%;
   }
 }
 @keyframes reelFish {
   0% {
     bottom: 0%;
+    left: 90%
+  }
+  25% {
+    bottom: 0%;
+    left: 75%
+  }
+  49%{
+    left: 60%;
   }
   50% {
     bottom: 0%; /* Stay at the bottom for the first 10 seconds */
+    left: 50%;
   }
   100% {
     bottom: 99.5%; /* Move up during the next 5 seconds */
