@@ -354,7 +354,7 @@ footer .footer-content a:hover {
     transform-origin: 0% 50%;
   }
   25% {
-    transform: rotate(110deg);
+    transform: rotate(100deg);
     transform-origin: 0% 50%;
   }
   50% {
@@ -362,7 +362,7 @@ footer .footer-content a:hover {
     transform-origin: 0% 50%;
   }
   75% {
-    transform: rotate(70deg);
+    transform: rotate(80deg);
     transform-origin: 0% 50%;
   }
   100% {
