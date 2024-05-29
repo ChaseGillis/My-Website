@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
         <br/><br/>
         I combine my expertise in Python, SQL, Java, and JavaScript with the work ethic and resilience I cultivated through being a student-athlete to tackle real-world problems and create impactful solutions. All of my previous roles, from SWE Consulting to leading a project dedicated to aiding legal research, involved optimizing systems or improving processes, aligning with my ultimate goal of using technology to make an impact.
         <br/><br/>
-        When I'm not coding, you can find me working on my Nissan 370Z, or exploring my interests in fishing, weight lifting, chess, hiking, and spikeball.</p>
+        When I'm not coding, you can find me working on my Nissan 370Z, or exploring my interests such as fishing, dirtbiking, weight lifting, chess, and spikeball.</p>
       </div>
     </div>
   );
