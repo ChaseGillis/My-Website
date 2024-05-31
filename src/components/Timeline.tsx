@@ -52,7 +52,7 @@ const Timeline: React.FC = () => {
               <img src={`${process.env.PUBLIC_URL}/Java icon.svg`} alt="Java Icon" />
               <ion-icon name="logo-javascript" title="JavaScript"></ion-icon>
               <img src={`${process.env.PUBLIC_URL}/sql icon.png`} alt="SQL Icon" />
-              <ion-icon name="logo-html5" title="HTML5"></ion-icon> <br />
+              <ion-icon name="logo-html5" title="HTML5"></ion-icon>
               <ion-icon name="logo-css3" title="CSS3"></ion-icon>
               <ion-icon name="logo-react" title="React"></ion-icon>
               <ion-icon name="logo-nodejs" title="Node.js"></ion-icon>

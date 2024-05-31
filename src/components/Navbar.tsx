@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode, scrollToBot
         <li><a href="#projects">Projects</a></li>
         <li><button onClick={scrollToBottom}>Socials</button></li>
         <button onClick={toggleDarkMode} className="dark-mode-toggle">
-        {isDarkMode ? <ion-icon name="sunny-outline"></ion-icon> : <ion-icon name="moon-outline"></ion-icon>}
+        {isDarkMode ? <ion-icon name="moon-outline"></ion-icon> : <ion-icon name="sunny-outline"></ion-icon>}
       </button>
       </ul>
     </nav>

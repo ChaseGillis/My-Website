@@ -1,6 +1,6 @@
 /* Default light theme */
 :root {
-  --background-color: #fff5ba;
+  --background-color: #6bd3f6;
   --text-color: #000000;
   --link-color: #fff;
   --footer-background-color: #ceccccd4;
@@ -305,8 +305,9 @@ footer .footer-content a:hover {
 .fisherman {
   width: 200px;
   height: auto;
-  left: 32.5%;
+  left: 50%;
   top: -35px;
+  transform: translateX(-200px);
   position: absolute;
   z-index: 1;
 }
@@ -467,7 +468,7 @@ footer .footer-content a:hover {
   transition: transform 0.3s ease-in-out;
 }
 .TechStack:hover {
-  transform: scale(1.2);
+  filter: drop-shadow(20px 20px 20px yellow);
 }
 @keyframes coolThing {
   0% {
@@ -545,4 +546,3 @@ footer .footer-content a:hover {
 .projimg p {
   width: 600px;
 }
-
