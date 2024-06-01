@@ -38,7 +38,9 @@ const App: React.FC = () => {
         isDarkMode={isDarkMode} 
         scrollToBottom={scrollToBottom} 
       /></header>
-        <h1 className="INTRO">CHASE GILLIS</h1>
+      <div className="intro-container">
+        <h1 className="INTRO">CHASE GILLIS</h1></div>
+        <br/>
       <AboutMe />
       <br/>
       <br/>

@@ -18,9 +18,17 @@ h2 {
   font-family: 'Poppins, sans-serif';
 }
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-.INTRO {
-  margin-inline: 30%;
+/* Container for centering */
+.intro-container {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
   position: relative;
+  padding: 0;  /* Ensure no extra padding */
+}
+
+/* Intro text */
+.INTRO {
   color: #000000;
   font-weight: bold;
   font-family: "Anonymous Pro", monospace;
@@ -30,6 +38,8 @@ h2 {
   white-space: nowrap;
   animation: typewriter 5s steps(30) 1s infinite,
     blinkTextCursor 500ms infinite;
+  margin: 10vh, 0vh, 10vh, 0vh;  /* Ensure no extra margin */
+  line-height: 1;  /* Adjust line height to reduce space within the text */
 }
 .dark-mode .INTRO {
   color: #ffffff;
@@ -280,20 +290,38 @@ footer .footer-content a:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
 }
 
 .TechStack ion-icon {
   font-size: 75px; /* Larger icons */
   margin-right: 20px; /* Space between icons */
 }
+
 .TechStack img {
   width: 75px;
   height: 75px; 
   margin-right: 10px;
 }
+
 .dark-mode .TechStack img {
   filter: invert(100%); 
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .TechStack {
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .TechStack ion-icon,
+  .TechStack img {
+    margin-right: 0; /* Remove right margin for vertical stacking */
+    margin-bottom: 10px; /* Add bottom margin for spacing between items */
+  }
+}
+
 .resume-tech-container img {
   border-radius: 30px;
   margin-right: 10px;
@@ -549,7 +577,7 @@ footer .footer-content a:hover {
 }
 @media (max-width: 768px) {
   .projectWrapper {
-    flex-direction: column; /* Stack items on top of each other for smaller screens */
+    flex-direction: row; /* Stack items on top of each other for smaller screens */
     align-items: center; /* Center align items when stacked */
   }
 }
@@ -632,6 +660,10 @@ footer .footer-content a:hover {
     .App {
       transform: scale(0.3);
       margin:0;
+    }
+    .projectWrapper {
+      flex-direction: row; /* Stack items on top of each other for smaller screens */
+      align-items: center; /* Center align items when stacked */
     }
   
   }
