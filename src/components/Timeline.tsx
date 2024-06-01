@@ -4,10 +4,11 @@ const Timeline: React.FC = () => {
 
   return (
     <><div className="timeline" id="resume">
-      <img src={`${process.env.PUBLIC_URL}/fisherman.png`} alt="Fisherman" className="fisherman" />
-          <div className="line"></div>
+      <div className="timeline-wrapper">
+        <div className="resme">
+        <img src={`${process.env.PUBLIC_URL}/fisherman.png`} alt="Fisherman" className="fisherman" />
+          <div className="line"></div>      </div>
       <div className="exp"><h2>WORK EXPERIENCE</h2></div>
-      <br/><br/><br/><br/><br/><br/><br/><br/>
           <div className="timeline-container left">
               <div className="content">
                   <h2>U.S. CENTURY BANK</h2>
@@ -46,7 +47,7 @@ const Timeline: React.FC = () => {
                   <p><br/>● Refactored a complex codebase, drafting a UML class diagram for system reorganization<br/><br/>
 ● Implemented unit tests and added tire-wear detection for service decisions using test-driven development</p></div>
               </div>
-          <img src={`${process.env.PUBLIC_URL}/fish.png`} alt="fish" className="fish" />
+          <img src={`${process.env.PUBLIC_URL}/fish.png`} alt="fish" className="fish" /></div>
       </div><div className="TechStack">
               <ion-icon name="logo-python" title="Python"></ion-icon>
               <img src={`${process.env.PUBLIC_URL}/Java icon.svg`} alt="Java Icon" />
