@@ -15,7 +15,7 @@ const Timeline: React.FC = () => {
                   <h3><i>Software Engineering Intern</i></h3>
                   <p><br/>● Developed Python-based archive system to relocate files older than a specified date, optimizing system performance<br/><br/>
 ● Designed profitability model using SQL and Python to rank accounts and suggest fee adjustments, enhancing bank revenue<br/><br/>
-● Completed an API to automate bank statement retrieval, improving operational efficiency</p>
+● Built a cybersecurity system that periodically verifies file integrity using hash comparisons and sends alerts of tampering</p>
               </div>
               </div>
               <div className="timeline-container right">

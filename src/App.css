@@ -1,4 +1,9 @@
 /* Default light theme */
+* {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 :root {
   --background-color: #6bd3f6;
   --text-color: #000000;
@@ -38,7 +43,7 @@ h2 {
   white-space: nowrap;
   animation: typewriter 5s steps(30) 1s infinite,
     blinkTextCursor 500ms infinite;
-  margin: 10vh, 0vh, 10vh, 0vh;  /* Ensure no extra margin */
+  margin-top: 20px; /* Ensure no extra margin */
   line-height: 1;  /* Adjust line height to reduce space within the text */
 }
 .dark-mode .INTRO {
@@ -100,7 +105,6 @@ a {
 }
 
 .App-header {
-  background-color: var(--footer-background-color); /* Instead of a hardcoded value */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -114,24 +118,44 @@ a {
   color: var(--link-color);
 }
 
+header {
+  background-color: #ceccccd4;
+  width: 100%;
+}
+
 ul {
   list-style-type: none; /* This removes bullet points */
   padding: 0;
   margin: 0;
-  background-color: var(--footer-background-color);
 }
 
 /* External or internal CSS */
 .img-small {
   align-items: left;
-  padding-inline: 10px;
+  padding-inline: 5vh;
   width: 400px; /* or any other size */
   height: auto;
 }
 
 nav {
   font-weight: bold;
-  text-align: center;  /* Centers the ul inside the nav */
+  list-style-type: none;  /* Removes bullet points */
+  padding: 0;  /* Removes padding */
+  margin: 0;  /* Removes default margin */
+  display: flex;  /* Flexbox to make the items horizontal */
+  justify-content: center;  /* Centers items horizontally */
+  align-items: center;  /* Align items vertically */
+  box-sizing: border-box;
+  width: 100%;
+}
+nav li {
+  margin-inline: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dark-mode nav {
+  background-color: #838383;
 }
 
 .logo {
@@ -140,6 +164,9 @@ nav {
 }
 .dark-mode .logo {
   filter: invert(0%)
+}
+.logo:hover {
+  height: 45px;
 }
 
 nav ul {
@@ -150,12 +177,11 @@ nav ul {
   justify-content: center;  /* Centers items horizontally */
   align-items: center;  /* Align items vertically */
   box-sizing: border-box;
+  background-color: none;
 }
-
 
 nav button {
   font-family: 'Poppins, sans-serif';
-  
   background: none;  /* Removes background */
   border: none;  /* Removes border */
   cursor: pointer;  /* Changes cursor to pointer to indicate clickable */
@@ -174,9 +200,6 @@ nav ion-icon:hover {
   font-size: 3em;  /* Adjust the size as needed */
 }
 
-nav li {
-  margin: 20px 80px;  /* Adds horizontal spacing between items */
-}
 
 li button {
   font-weight: bold;
@@ -207,17 +230,21 @@ nav a:hover {
   font-size: 1.2em;
 }
 
+footer {
+  background-color: var(--footer-background-color);
+  width: 100%;
+}
 
 footer .footer-content {
   background-color: var(--footer-background-color);
-  list-style-type: none;  /* Removes bullet points */
-  padding-inline: 35px;  /* Removes padding */
-  margin: 0;  /* Removes default margin */
+  list-style-type: none;  /* Removes bullet points */ /* Removes padding */
+  margin-top: 15px;/* Removes default margin */
   display: flex;  /* Flexbox to make the items horizontal */
   justify-content: center;  /* Centers items horizontally */
   align-items: center;  /* Align items vertically */
   box-sizing: border-box;
   width: 100%;
+  white-space: nowrap;
 }
 
 footer .footer-content button {
@@ -245,7 +272,6 @@ footer .footer-content a {
 }
 .dark-mode footer .footer-content a {
   color: var(--link-color); /* Light green, or choose your own color */
-  padding-inline: 75px;
   font-size: 1.5em;
   filter: invert(0%); 
 }
@@ -320,6 +346,16 @@ footer .footer-content a:hover {
     margin-right: 0; /* Remove right margin for vertical stacking */
     margin-bottom: 10px; /* Add bottom margin for spacing between items */
   }
+  nav li {
+    margin-inline: 18px;
+  }
+  footer .footer-content button {
+    padding-inline: 25px;
+  }
+  footer .footer-content a {
+    padding-inline: 25px;
+  }
+
 }
 
 .resume-tech-container img {
@@ -572,15 +608,11 @@ footer .footer-content a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   gap:20px;
 }
-@media (max-width: 768px) {
-  .projectWrapper {
-    flex-direction: row; /* Stack items on top of each other for smaller screens */
-    align-items: center; /* Center align items when stacked */
-  }
-}
+
+
 .projimg {
   display: flex;
   flex-direction: column;
@@ -622,6 +654,11 @@ footer .footer-content a:hover {
   align-items: center;
   margin-top: 0px;
 }
+@media (max-width: 768px) {
+  .content2 {
+    flex-direction: column;
+  }
+}
 
 .pparse {
   margin-top: 20px;
@@ -640,10 +677,11 @@ footer .footer-content a:hover {
 }
 
 .text {
-  width: 600px;
+  width: 50%;
   text-align: center;
   margin-top: 20px;
 }
+
 
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -651,6 +689,7 @@ footer .footer-content a:hover {
   .App {
     transform: scale(0.5);
     margin:0;
+    width: 100%;
   }
   
   }
@@ -659,6 +698,7 @@ footer .footer-content a:hover {
   
     .App {
       transform: scale(0.3);
+      width: 100%;
       margin:0;
     }
     .projectWrapper {
@@ -673,5 +713,6 @@ footer .footer-content a:hover {
     .App {
       transform: scale(0.2);
       margin:0;
+      width: 100%;
     }
   }
