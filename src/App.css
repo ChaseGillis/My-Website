@@ -470,10 +470,11 @@ footer .footer-content a:hover {
   }
 }
 .exp h2{
+  transform: scale(1.4);
   white-space: nowrap;
   position: absolute;
-  top:0%;
-  left: 55%;
+  top:10%;
+  left: 60%;
   z-index: 1;
   color: #000000;
   padding-bottom: 150px;
