@@ -4,7 +4,7 @@ const AboutMe: React.FC = () => {
   return (
     <div id="about" className="about-container">
       <div className="profile-image">
-        <img src={`${process.env.PUBLIC_URL}/profilePic.png`} alt="Profile" className="img-small"/>
+        <img src={`${process.env.PUBLIC_URL}/profilePic.jpg`} alt="Profile" className="img-small"/>
       </div>
       <div className="about-text">
         <h2>ABOUT</h2>

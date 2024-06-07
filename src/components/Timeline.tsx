@@ -13,9 +13,9 @@ const Timeline: React.FC = () => {
               <div className="content">
                   <h2>U.S. CENTURY BANK</h2>
                   <h3><i>Software Engineering Intern</i></h3>
-                  <p><br/>● Developed Python-based archive system to relocate files older than a specified date, optimizing system performance<br/><br/>
-● Designed profitability model using SQL and Python to rank accounts and suggest fee adjustments, enhancing bank revenue<br/><br/>
-● Built a cybersecurity system that periodically verifies file integrity using hash comparisons and sends alerts of tampering</p>
+                  <p>● Designed profitability model using SQL, Python, and Power BI to rank accounts and suggest changes, increasing revenue<br/><br/>
+● Built a cybersecurity system that periodically verifies file integrity using hash comparisons and sends alerts of tampering<br/><br/>
+● Developed Python-based archive system to relocate files older than a specified date, optimizing system performance</p>
               </div>
               </div>
               <div className="timeline-container right">
