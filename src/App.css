@@ -238,7 +238,8 @@ footer {
 footer .footer-content {
   background-color: var(--footer-background-color);
   list-style-type: none;  /* Removes bullet points */ /* Removes padding */
-  margin-top: 15px;/* Removes default margin */
+  margin-top: 13px;/* Removes default margin */
+  margin-bottom: 0;
   display: flex;  /* Flexbox to make the items horizontal */
   justify-content: center;  /* Centers items horizontally */
   align-items: center;  /* Align items vertically */
@@ -347,13 +348,11 @@ footer .footer-content a:hover {
     margin-bottom: 10px; /* Add bottom margin for spacing between items */
   }
   nav li {
-    margin-inline: 18px;
+    margin-inline: 50px;
   }
-  footer .footer-content button {
-    padding-inline: 25px;
-  }
-  footer .footer-content a {
-    padding-inline: 25px;
+  footer .footer-content button,  footer .footer-content a{
+    padding-inline: 60px;
+    margin-bottom:50px;
   }
 
 }
