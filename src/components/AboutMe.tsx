@@ -8,7 +8,7 @@ const AboutMe: React.FC = () => {
       </div>
       <div className="about-text">
         <h2>ABOUT</h2>
-        <p>Hello, and welcome to my personal website built with React, TypeScript, HTML, and CSS!
+        <p>Welcome to my personal website built with React, TypeScript, HTML, and CSS!
         <br/><br/>
         As a senior at New York University pursuing a Bachelor of Arts in Computer Science with a minor in Data Science, I have honed my skills in software engineering and data analysis. My academic journey and real-world experiences have fueled my passion for building fun projects that drive business success and technological advancement.
         <br/><br/>
