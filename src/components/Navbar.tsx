@@ -15,10 +15,10 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode, scrollToBot
         alt="Logo"
         className="logo"
       />
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><button onClick={scrollToBottom}>Links</button></li>
+        <a href="#about">About</a>
+        <a href="#resume">Experience</a>
+        <a href="#projects">Projects</a>
+        <button onClick={scrollToBottom}>Links</button>
         <button onClick={toggleDarkMode} className="dark-mode-toggle">
         {isDarkMode ? <ion-icon name="moon-outline"></ion-icon> : <ion-icon name="sunny-outline"></ion-icon>}
       </button>

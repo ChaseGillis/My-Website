@@ -119,8 +119,11 @@ a {
 }
 
 header {
-  background-color: #ceccccd4;
+  background-color: #cecccc;
   width: 100%;
+}
+.dark-mode header {
+  background-color: #838383;
 }
 
 ul {
@@ -147,26 +150,20 @@ nav {
   align-items: center;  /* Align items vertically */
   box-sizing: border-box;
   width: 100%;
-}
-nav li {
   margin-inline: 60px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
 .dark-mode nav {
   background-color: #838383;
 }
-
 .logo {
   height: 40px;
+  padding-right: 35px;
   filter: invert(100%); 
 }
 .dark-mode .logo {
   filter: invert(0%)
-}
-.logo:hover {
-  height: 45px;
 }
 
 nav ul {
@@ -180,55 +177,43 @@ nav ul {
   background-color: none;
 }
 
-nav button {
+.navbar button {
+  padding-inline: 60px;
+  font-size: 1em;
+  font-weight: bold;
+  filter: invert(100%);
   font-family: 'Poppins, sans-serif';
   background: none;  /* Removes background */
   border: none;  /* Removes border */
   cursor: pointer;  /* Changes cursor to pointer to indicate clickable */
   color: var(--link-color);  /* Inherits color from parent for consistency */
 }
-.dark-mode nav button {
-  filter: invert(100%); 
-}
-
-nav ion-icon {
-  font-size: 2.5em;  /* Adjust the size as needed */
-  vertical-align: middle;  /* Keeps icon aligned with adjacent text */
-  filter: invert(100%); 
-}
-nav ion-icon:hover {
-  font-size: 3em;  /* Adjust the size as needed */
-}
-
-
-li button {
-  font-weight: bold;
-  text-decoration: none;  /* Removes underline from links */
-  color: var(--link-color);  /* Sets text color for links */
-  font-size: 1em;
-  filter: invert(100%); 
-}
-.dark-mode li button {
+.dark-mode .navbar button {
   filter: invert(0%);
+  background: none !important;
+  border: none !important;
 }
 
-li button:hover {
-  font-size: 1.2em;
+
+.navbar button ion-icon {
+  font-size: 1.5em;  /* Adjust the size as needed */
+  vertical-align: middle;  /* Keeps icon aligned with adjacent text */
+  padding-left: 0px;
+  font-weight: bold;
 }
+
 
 nav a {
   text-decoration: none;  /* Removes underline from links */
   color: var(--link-color);  /* Sets text color for links */
   font-size: 1em;
   filter: invert(100%); 
+  padding-inline: 60px;
 }
 .dark-mode nav a {
   filter: invert(0%); 
 }
 
-nav a:hover {
-  font-size: 1.2em;
-}
 
 footer {
   background-color: var(--footer-background-color);
@@ -277,11 +262,9 @@ footer .footer-content a {
   font-size: 1.5em;
   filter: invert(0%); 
 }
-
 footer .footer-content a:hover {
-  font-size: 1.7em; 
+  font-size: 1.5em; 
 }
-
 
 .about-container {
   display: flex;
@@ -332,7 +315,7 @@ footer .footer-content a:hover {
 @media (max-width: 768px) {
   .about-container {
     padding-top: 200px;
-    padding-bottom: 170px;
+    padding-bottom: 190px;
     transform: scale(1.4);
     max-width: 100%;
     flex-direction: column; /* Stack items on top of each other for smaller screens */
@@ -349,41 +332,37 @@ footer .footer-content a:hover {
     margin-top: 10px;
     margin-inline: 20px;
   }
+
   .logo{
-    transform: scale(1.6);
-    margin-inline: 25px;
-    padding-top:20px;
-    padding-bottom:30px;
-    max-width: 100%;
-    margin-top: 10px;
+    height: 60px;
     flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around; /* Adjust spacing between items */
-    align-items: center; /* Vertically center items */
+    margin:0;
+    padding:0;
+    margin-left:0px;
   }
-  nav button {
-    transform: scale(2.2);
-    margin-inline: 25px;
-    padding-top:20px;
-    padding-bottom:30px;
-    max-width: 100%;
-    margin-top: 10px;
+  .navbar button {
+    font-size: 50px;
     flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around; /* Adjust spacing between items */
-    align-items: center; /* Vertically center items */
+    margin:0;
+    padding:0;
+    margin-inline: 50px;
   }
-  nav li a{
-    transform: scale(2.2);
-    margin-inline: 25px;
-    padding-top:20px;
-    padding-bottom:30px;
-    max-width: 100%;
-    margin-top: 10px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around; /* Adjust spacing between items */
-    align-items: center; /* Vertically center items */
+  
+  nav a {
+    font-size: 50px;
+    vertical-align: middle;
+    margin:0;
+    padding:0;
+    margin-inline: 60px;
+    z-index: 10000;
+  }
+  header {
+    vertical-align: middle;  
+    margin:0;
+    padding:0;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    overflow-x: hidden;
   }
   .footer-content,
   .dark-mode .footer-content{
@@ -413,7 +392,7 @@ footer .footer-content a:hover {
     font-size: 75px;
     position: relative;
     left: -70px;
-    padding-inline: 60px;
+    padding-inline: 80px;
     margin: 0;
   }
   .dark-mode footer .footer-content a :hover,
@@ -571,8 +550,6 @@ footer .footer-content a:hover {
 .dark-mode .fish {
   filter:invert(100%);
 }
-
-
 .timeline-container {
   padding-top: 50px;
   padding: 10px 40px;

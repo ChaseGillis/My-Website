@@ -5,8 +5,8 @@ const Projects: React.FC = () => {
     <div className="projectWrapper">
       <div className="projimg">
         <div className="hill-images">
-          <img src={`${process.env.PUBLIC_URL}/leftHill.png`} alt="Image 1" className="img1" />
-          <img src={`${process.env.PUBLIC_URL}/rightHill.png`} alt="Image 2" className="img2" />
+          <img src={`${process.env.PUBLIC_URL}/leftHill.png`} alt="Hill 1" className="img1" />
+          <img src={`${process.env.PUBLIC_URL}/rightHill.png`} alt="Hill 2" className="img2" />
         </div>
         <div className="content2">
         <div className="text">
