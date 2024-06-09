@@ -133,7 +133,7 @@ ul {
 .img-small {
   align-items: left;
   padding-inline: 5vh;
-  width: 400px; /* or any other size */
+  width: 50%; /* or any other size */
   height: auto;
 }
 
@@ -246,6 +246,7 @@ footer .footer-content {
   box-sizing: border-box;
   width: 100%;
   white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 footer .footer-content button {
@@ -290,14 +291,6 @@ footer .footer-content a:hover {
   flex-direction: row; /* Default to row for larger screens */
 }
 
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column; /* Stack items on top of each other for smaller screens */
-    align-items: center; /* Center align items when stacked */
-  }
-}
-
-
 .profile-image img {
   width: 400px; /* Adjust the width as needed */
   height: auto; /* Maintains the aspect ratio of the image */
@@ -337,23 +330,111 @@ footer .footer-content a:hover {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+  .about-container {
+    padding-top: 200px;
+    padding-bottom: 170px;
+    transform: scale(1.4);
+    max-width: 100%;
+    flex-direction: column; /* Stack items on top of each other for smaller screens */
+    align-items: center; /* Center align items when stacked */
+  }
   .TechStack {
     flex-direction: row; /* Stack items vertically */
     align-items: center; /* Center items */
   }
-
   .TechStack ion-icon,
   .TechStack img {
     margin-right: 0; /* Remove right margin for vertical stacking */
     margin-bottom: 10px; /* Add bottom margin for spacing between items */
+    margin-top: 10px;
+    margin-inline: 20px;
   }
-  nav li {
-    margin-inline: 50px;
+  .logo{
+    transform: scale(1.6);
+    margin-inline: 25px;
+    padding-top:20px;
+    padding-bottom:30px;
+    max-width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    align-items: center; /* Vertically center items */
   }
-  footer .footer-content button,  footer .footer-content a{
+  nav button {
+    transform: scale(2.2);
+    margin-inline: 25px;
+    padding-top:20px;
+    padding-bottom:30px;
+    max-width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    align-items: center; /* Vertically center items */
+  }
+  nav li a{
+    transform: scale(2.2);
+    margin-inline: 25px;
+    padding-top:20px;
+    padding-bottom:30px;
+    max-width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    align-items: center; /* Vertically center items */
+  }
+  .footer-content,
+  .dark-mode .footer-content{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    align-items: center; /* Vertically center items */
+    margin-bottom:0;
+  }
+  footer,
+  .dark-mode footer {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+  .footer-content p button,
+  .dark-mode .footer-content p button {
+    transform: scale(3);
+    padding: 0;
+    position: relative; /* Position relative to its normal position */
+    top: -15px; /* Adjust the vertical position */
+    left: 10px; /* Adjust the horizontal position */
+  }
+  .dark-mode .footer-content p a,
+  .footer-content p a{
+    font-size: 75px;
+    position: relative;
+    left: -70px;
     padding-inline: 60px;
+    margin: 0;
   }
-
+  .dark-mode footer .footer-content a :hover,
+  footer .footer-content a :hover{
+    font-size: 75px;
+  }
+  .dark-mode .footer-content button :hover,
+  footer .footer-content button :hover{
+    font-size: 30px;
+  }
+  .intro-container {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    transform: scale(1.7);
+    max-width: 100%;
+  }
+  .projectWrapper .content2 {
+    padding-top: 100px;
+    transform: scale(1.5);
+    padding-bottom: 170px;
+  }
 }
 
 .resume-tech-container img {
@@ -579,10 +660,13 @@ footer .footer-content a:hover {
   0% {
     transform: rotateX(0deg) rotateY(0deg) translate(250px, 0);
   }
-  25% {
+  18.75% {
     transform: rotateX(-40deg) rotateY(-20deg) translate(0px, -170px);
   }
-  50% {
+  37.5% {
+    transform: rotateX(-40deg) rotateY(-20deg) translate(0px, -170px);
+  }
+  56.25% {
     transform: rotateX(0deg) rotateY(0deg) translate(-250px, 0);
   }
   75% {
@@ -689,7 +773,7 @@ footer .footer-content a:hover {
     margin:0;
     width: 100%;
   }
-  
+
   }
   
   @media screen and (min-width: 481px) and (max-width: 767px) {
