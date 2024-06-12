@@ -1,10 +1,9 @@
 /* Default light theme */
 * {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin:0;
   scroll-behavior: smooth;
 }
+ 
 :root {
   --background-color: #6bd3f6;
   --text-color: #000000;
@@ -39,7 +38,7 @@ h2 {
   font-weight: bold;
   font-family: "Anonymous Pro", monospace;
   letter-spacing: 7px;
-  overflow: hidden;
+  overflow-x: hidden;
   border-right: 2px solid hsl(0, 0%, 80%);
   white-space: nowrap;
   animation: typewriter 5s steps(30) 1s infinite,
@@ -85,6 +84,7 @@ body {
   color: var(--text-color); /* Use variable for text color */
   margin: 0;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -133,7 +133,6 @@ header {
 ul {
   list-style-type: none; /* This removes bullet points */
   margin: 0;
-  margin: 0;
 }
 
 /* External or internal CSS */
@@ -179,6 +178,8 @@ nav ul {
   align-items: center;  /* Align items vertically */
   box-sizing: border-box;
   background-color: none;
+  position: relative;
+  left: -65px;
 }
 
 .navbar button {
@@ -223,6 +224,7 @@ footer {
   background-color: var(--footer-background-color);
   width: 100%;
   z-index: 5;
+  height: 60px;
 }
 
 footer .footer-content {
@@ -252,9 +254,6 @@ footer .footer-content button {
   filter: invert(0%); 
 }
 
-footer .footer-content button:hover {
-  font-size: 1.7em; 
-}
 
 footer .footer-content a {
   color: var(--link-color); /* Light green, or choose your own color */
@@ -266,9 +265,6 @@ footer .footer-content a {
   color: var(--link-color); /* Light green, or choose your own color */
   font-size: 1.5em;
   filter: invert(0%); 
-}
-footer .footer-content a:hover {
-  font-size: 1.5em; 
 }
 
 .about-container {
@@ -322,6 +318,13 @@ footer .footer-content a:hover {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+  * {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .app {
+    margin: 0;
+  }
   .about-container {
     margin-top: 700px;
     margin-bottom: 750px;
@@ -334,7 +337,7 @@ footer .footer-content a:hover {
   }
   .logo{
     position: relative;
-    left: -60px;
+    left: -30px;
     height: 60px;
     flex-wrap: wrap;
     margin:0;
@@ -342,7 +345,7 @@ footer .footer-content a:hover {
   }
   .navbar button {
     position: relative;
-    left: -60px;
+    left: -30px;
     font-size: 50px;
     flex-wrap: wrap;
     margin:0;
@@ -351,7 +354,7 @@ footer .footer-content a:hover {
   
   nav a {
     position: relative;
-    left: -60px;
+    left: -30px;
     font-size: 50px;
     vertical-align: middle;
     margin:0;
@@ -371,11 +374,11 @@ footer .footer-content a:hover {
     display: flex;
     justify-content: space-around; /* Adjust spacing between items */
     align-items: center; /* Vertically center items */
-    margin-bottom:0;
   }
   footer,
   .dark-mode footer {
     margin: 0;
+    height: 200px;
   }
   .footer-content p button,
   .dark-mode .footer-content p button {
@@ -393,18 +396,11 @@ footer .footer-content a:hover {
     left: -90px;
     margin-inline: 80px;
   }
-  .dark-mode footer .footer-content a :hover,
-  footer .footer-content a :hover{
-    font-size: 75px;
-  }
-  .dark-mode .footer-content button :hover,
-  footer .footer-content button :hover{
-    font-size: 30px;
-  }
+
   .intro-container {
     margin-top: 40px;
     margin-bottom: 10px;
-    transform: scale(2.2);
+    transform: scale(3);
     max-width: 100%;
     position: relative;
     left: -30px;
@@ -422,10 +418,14 @@ footer .footer-content a:hover {
   }
   .timeline {
     transform: scale(1.4);
-    margin-top: 500px;
+    margin-top: 300px;
     margin-bottom: 450px;
     position: relative;
     left: -40px;
+  }
+  .timeline-container.right {
+    position: relative;
+    margin-top: 15px !important;
   }
   .TechStack {
     flex-direction: row; /* Stack items vertically */
@@ -442,11 +442,26 @@ footer .footer-content a:hover {
     margin-top: 10px;
     margin-inline: 20px;
   }
-  .ball{
+  .img1, .img2{
+    margin-top: 100px;
+  }
+  .test2 h1 {
     transform: scale(3);
   }
-  .hill-images img{
-    margin-top: 300px;
+  .exp {
+    position: relative;
+    transform: scale(1.4);
+    top: -200px;
+    left: 75px;
+  }
+  .about-text h2 {
+    transform: scale(1.4);
+    margin-bottom: 15px;
+  }
+  .ball {
+    position: relative;
+    height: 10px !important;
+    width: 300px !important;
   }
 }
 
@@ -779,40 +794,41 @@ footer .footer-content a:hover {
   .App {
     margin:0;
     width: 100%;
-    overflow: auto;
   }
 
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+  .App {
+    width: 100%;
+    margin:0;
   }
-  
-  @media screen and (min-width: 481px) and (max-width: 767px) {
-  
-    .App {
-      width: 100%;
-      margin:0;
-    }
-    .projectWrapper {
-      flex-direction: row; /* Stack items on top of each other for smaller screens */
-      align-items: center; /* Center align items when stacked */
-    }
-  
+  .projectWrapper {
+    flex-direction: row; /* Stack items on top of each other for smaller screens */
+    align-items: center; /* Center align items when stacked */
   }
-  
-  @media screen and (min-width: 320px) and (max-width: 480px ) {
-  
-    .App {
-      margin:0;
-      width: 100%;
-    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px ) {
+
+  .App {
+    margin:0;
+    width: 100%;
   }
+}
 .ball {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  width: 3px; /* Adjust size as needed */
-  height: 3px; /* Adjust size as needed */
+  left: 500px;
+  width: 100px; /* Adjust size as needed */
+  height: 4px; /* Adjust size as needed */
   background-color: rgb(255, 255, 255); /* Semi-transparent white */
-  border-radius: 50%;
+  border-radius: 95%;
   z-index: 0;
+  transform: rotateZ(135deg);
+  transform-origin: center;
 }

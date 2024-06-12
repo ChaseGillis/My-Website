@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Timeline from './components/Timeline';
+import Balls from './components/Balls';
 
 const App: React.FC = () => {
   // Initialize darkMode state from localStorage or default to false if undefined
@@ -27,11 +28,13 @@ const App: React.FC = () => {
   };
 
   const scrollToBottom = () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    window.scrollTo({ top: document.body.scrollHeight});
   };
 
   return (
     <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
+      <div id="ball-container"></div>
+      <script src="%PUBLIC_URL%/ball.js"></script>
       <header>
       <Navbar 
         toggleDarkMode={toggleDarkMode} 
@@ -54,6 +57,8 @@ const App: React.FC = () => {
       <Projects /> <br/> <br/>
       <footer>
       <Footer /></footer>
+      <div className='ball-container'>
+      <Balls /></div>
     </div>
   );
 };
