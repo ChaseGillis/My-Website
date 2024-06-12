@@ -18,7 +18,7 @@ const Balls: React.FC = () => {
         balls.forEach(ball => { // Fix: remove extra closing parenthesis
           const vh = window.innerHeight; // Viewport height
           const angle = vh; // Angle in radians
-          const speed = 0.2; // Adjust as needed
+          const speed = 0.1; // Adjust as needed
       
           // Define velocity variables (start with 0)
           let vx = 0;
@@ -27,21 +27,16 @@ const Balls: React.FC = () => {
           // Update velocity based on random direction and speed
           vx += (Math.random() - 0.5) * speed; // Random horizontal velocity between -speed and speed
           vy = speed * Math.sin(angle); // Vertical velocity
-
-            // Update position based on velocity
-        let x = parseFloat((ball as HTMLElement).style.left) || Math.random() * 200 - 100;
-        let y = parseFloat((ball as HTMLElement).style.top) || Math.random() * 100;
-        x += vx;
-        y += vy;
-
-        // Keep balls within screen boundaries
-        x = x + 100;
-        y = y - 100;
-
-        // Update ball position
-        (ball as HTMLElement).style.left = `${x}px`;
-        (ball as HTMLElement).style.top = `${y}px`;
-
+      
+          // Update position based on velocity
+          let x = parseFloat((ball as HTMLElement).style.left) || Math.random() * 200 - 100;
+          let y = parseFloat((ball as HTMLElement).style.top) || Math.random() * 100;
+          x += vx;
+          y += vy;
+      
+          // Update ball position
+          (ball as HTMLElement).style.left = `${x}%`;
+          (ball as HTMLElement).style.top = `${y}%`;
       
           // Handle edge cases and reset position smoothly
           if (x < -50) { // Adjust boundary values as needed
@@ -67,7 +62,7 @@ const Balls: React.FC = () => {
     };
 
     // Create initial balls
-    const numBalls = 30; // Adjust the number of balls as needed
+    const numBalls = 3; // Adjust the number of balls as needed
     for (let i = 0; i < numBalls; i++) {
       createBall();
     }

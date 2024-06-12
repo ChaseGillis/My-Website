@@ -3,7 +3,7 @@
   margin:0;
   scroll-behavior: smooth;
 }
- 
+
 :root {
   --background-color: #6bd3f6;
   --text-color: #000000;
@@ -45,6 +45,7 @@ h2 {
     blinkTextCursor 500ms infinite;
   margin-top: 20px; /* Ensure no extra margin */
   line-height: 1;  /* Adjust line height to reduce space within the text */
+  overflow-y: auto;
 }
 .dark-mode .INTRO {
   color: #ffffff;
@@ -84,7 +85,7 @@ body {
   color: var(--text-color); /* Use variable for text color */
   margin: 0;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 a {
@@ -125,6 +126,8 @@ header {
   background-color: #cecccc;
   width: 100%;
   z-index: 10;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .dark-mode header {
   background-color: #838383;
@@ -225,6 +228,7 @@ footer {
   width: 100%;
   z-index: 5;
   height: 60px;
+  overflow-y: auto;
 }
 
 footer .footer-content {
@@ -266,13 +270,18 @@ footer .footer-content a {
   font-size: 1.5em;
   filter: invert(0%); 
 }
-
+.about-text h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .about-container {
   display: flex;
   align-items: center; /* Vertically center align the items in the container */
   justify-content: center; /* Horizontally center the content */
   gap: 20px; /* Adds space between the image and the text */
   flex-direction: row; /* Default to row for larger screens */
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .profile-image img {
@@ -366,7 +375,6 @@ footer .footer-content a {
     vertical-align: middle;  
     margin:0;
     margin-bottom: 25px;
-    overflow-x: hidden;
   }
   .footer-content,
   .dark-mode .footer-content{
@@ -604,11 +612,13 @@ footer .footer-content a {
 }
 /* Container for the timeline */
 .timeline {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   position: relative;
   width: 100%;
+  overflow-y: auto;
 }
 
 /* Wrapper to position containers correctly */
@@ -673,6 +683,7 @@ footer .footer-content a {
   text-align: center;
   margin-top: 20px;
   transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
 }
 .TechStack:hover {
   filter: drop-shadow(20px 20px 20px white);
