@@ -463,9 +463,9 @@ footer .footer-content a {
     overflow-x: hidden;
   }
   .timeline {
-    transform: scale(1.4);
-    margin-top: 300px;
-    margin-bottom: 450px;
+    transform: scale(1.7);
+    margin-top: 400px;
+    margin-bottom: 520px;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -507,7 +507,7 @@ footer .footer-content a {
     position: relative;
     transform: scale(1.4);
     top: -200px;
-    left: 77px;
+    left: 85px;
   }
   .about-text h2 {
     transform: scale(1.4);
@@ -636,7 +636,7 @@ footer .footer-content a {
 }
 .exp h2{
   transform: scale(1.4);
-  white-space: nowrap;
+  white-space: wrap;
   position: absolute;
   top:10%;
   left: 60%;
