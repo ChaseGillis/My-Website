@@ -247,7 +247,7 @@ footer {
   background-color: var(--footer-background-color);
   width: 100%;
   z-index: 5;
-  height: 60px;
+  height: 75px;
   overflow-y: hidden;
 }
 
@@ -393,7 +393,6 @@ footer .footer-content a {
   
   nav a {
     position: relative;
-    left: -30px;
     font-size: 50px;
     vertical-align: middle;
     margin:0;
