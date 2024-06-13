@@ -4,6 +4,7 @@
   scroll-behavior: smooth;
 }
 
+
 :root {
   --background-color: #6bd3f6;
   --text-color: #000000;
@@ -15,7 +16,7 @@
 .dark-mode {
   --background-color: #1d1c1c;  /* Dark gray */
   --text-color: #ffffff;  /* White text */
-  --footer-background-color: #838383;  /* Slightly lighter dark gray for footer */
+  --footer-background-color: #433e3e;  /* Slightly lighter dark gray for footer */
 }
 
 
@@ -30,6 +31,7 @@ h2 {
   align-items: center;  /* Center vertically */
   position: relative;
   margin: 0;  /* Ensure no extra margin */
+  overflow-y: hidden;
 }
 
 /* Intro text */
@@ -45,7 +47,7 @@ h2 {
     blinkTextCursor 500ms infinite;
   margin-top: 20px; /* Ensure no extra margin */
   line-height: 1;  /* Adjust line height to reduce space within the text */
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .dark-mode .INTRO {
   color: #ffffff;
@@ -76,6 +78,8 @@ p {
 
 body {
   font-family: 'Poppins, sans-serif';
+  min-width: 100% !important;
+  max-width: 100% !important;
   background-color: var(--background-color); /* Instead of a hardcoded value */
   min-height: 100vh;
   display: flex;
@@ -92,7 +96,9 @@ a {
   color: var(--link-color);
   text-decoration: none;
 }
-
+footer footer {
+  overflow-y: hidden;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -101,11 +107,18 @@ a {
   text-align: center;
   background-color: var(--background-color);
   overflow-x: hidden;
+  background-image: url('/public/Sky.png');
+  background-size: cover; 
+}
+.dark-mode .App {
+  background-image: url('/public/Galaxy.png');
+  background-size: cover; 
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  overflow-y: hidden;
 }
 
 .App-header {
@@ -116,6 +129,7 @@ a {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: var(--text-color); /* Use variable for text color */
+  overflow-y: hidden;
 }
 
 .App-link {
@@ -130,12 +144,13 @@ header {
   overflow-y: hidden;
 }
 .dark-mode header {
-  background-color: #838383;
+  background-color: var(--footer-background-color);
 }
 
 ul {
   list-style-type: none; /* This removes bullet points */
   margin: 0;
+  overflow-y: hidden;
 }
 
 /* External or internal CSS */
@@ -144,6 +159,7 @@ ul {
   margin-inline: 5vh;
   width: 50%; /* or any other size */
   height: auto;
+  overflow-y: hidden;
 }
 
 nav {
@@ -159,14 +175,16 @@ nav {
   margin-inline: 60px;
   margin-top: 15px;
   margin-bottom: 15px;
+  overflow-y: hidden;
 }
 .dark-mode nav {
-  background-color: #838383;
+  background-color: var(--footer-background-color);
 }
 .logo {
   height: 40px;
   margin-right: 35px;
   filter: invert(100%); 
+  overflow-y: hidden;
 }
 .dark-mode .logo {
   filter: invert(0%)
@@ -183,6 +201,7 @@ nav ul {
   background-color: none;
   position: relative;
   left: -65px;
+  overflow-y: hidden;
 }
 
 .navbar button {
@@ -195,11 +214,13 @@ nav ul {
   border: none;  /* Removes border */
   cursor: pointer;  /* Changes cursor to pointer to indicate clickable */
   color: var(--link-color);  /* Inherits color from parent for consistency */
+  overflow-y: hidden;
 }
 .dark-mode .navbar button {
   filter: invert(0%);
   background: none !important;
   border: none !important;
+  overflow-y: hidden;
 }
 
 
@@ -208,6 +229,7 @@ nav ul {
   vertical-align: middle;  /* Keeps icon aligned with adjacent text */
   margin-left: 0px;
   font-weight: bold;
+  overflow-y: hidden;
 }
 
 
@@ -217,6 +239,7 @@ nav a {
   font-size: 1em;
   filter: invert(100%); 
   margin-inline: 60px;
+  overflow-y: hidden;
 }
 .dark-mode nav a {
   filter: invert(0%); 
@@ -228,7 +251,7 @@ footer {
   width: 100%;
   z-index: 5;
   height: 60px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 footer .footer-content {
@@ -243,6 +266,7 @@ footer .footer-content {
   width: 100%;
   white-space: nowrap;
   flex-wrap: wrap;
+  overflow-y: hidden;
 }
 
 footer .footer-content button {
@@ -253,6 +277,7 @@ footer .footer-content button {
   margin-inline: 75px;
   font-size: 1.5em;
   filter: invert(100%); 
+  overflow-y: hidden;
 }
 .dark-mode footer .footer-content button {
   filter: invert(0%); 
@@ -264,6 +289,7 @@ footer .footer-content a {
   margin-inline: 75px;
   font-size: 1.5em;
   filter: invert(100%); 
+  overflow-y: hidden;
 }
 .dark-mode footer .footer-content a {
   color: var(--link-color); /* Light green, or choose your own color */
@@ -273,6 +299,7 @@ footer .footer-content a {
 .about-text h2 {
   margin-top: 30px;
   margin-bottom: 30px;
+  overflow-y: hidden;
 }
 .about-container {
   display: flex;
@@ -293,6 +320,7 @@ footer .footer-content a {
   border: 4px solid black;
   position: relative;
   z-index: 100;
+  overflow-y: hidden;
 }
 .dark-mode .profile-image img {
   border: 3px solid white;
@@ -301,6 +329,8 @@ footer .footer-content a {
   max-width: 600px; /* Limits the width of the text content */
   position: relative;
   z-index: 10;
+  overflow-y: hidden;
+  overflow-x:hidden;
 }
 
 .TechStack {
@@ -308,6 +338,7 @@ footer .footer-content a {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap; /* Allows items to wrap to the next line */
+  overflow-y: hidden;
 }
 
 .TechStack ion-icon {
@@ -319,6 +350,7 @@ footer .footer-content a {
   width: 75px;
   height: 75px; 
   margin-right: 10px;
+  overflow-y: hidden;
 }
 
 .dark-mode .TechStack img {
@@ -331,9 +363,6 @@ footer .footer-content a {
     margin-left:auto;
     margin-right:auto;
   }
-  .app {
-    margin: 0;
-  }
   .about-container {
     margin-top: 700px;
     margin-bottom: 750px;
@@ -343,6 +372,7 @@ footer .footer-content a {
     align-items: center; /* Center align items when stacked */
     position: relative;
     left: -30px;
+    overflow-y: hidden;
   }
   .logo{
     position: relative;
@@ -351,6 +381,7 @@ footer .footer-content a {
     flex-wrap: wrap;
     margin:0;
     margin-left:0px;
+    overflow-y: hidden;
   }
   .navbar button {
     position: relative;
@@ -359,6 +390,7 @@ footer .footer-content a {
     flex-wrap: wrap;
     margin:0;
     margin-inline: 50px;
+    overflow-y: hidden;
   }
   
   nav a {
@@ -370,11 +402,13 @@ footer .footer-content a {
     margin:0;
     margin-inline: 60px;
     z-index: 10000;
+    overflow-y: hidden;
   }
   header {
     vertical-align: middle;  
     margin:0;
     margin-bottom: 25px;
+    overflow-y: hidden;
   }
   .footer-content,
   .dark-mode .footer-content{
@@ -382,11 +416,16 @@ footer .footer-content a {
     display: flex;
     justify-content: space-around; /* Adjust spacing between items */
     align-items: center; /* Vertically center items */
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   footer,
   .dark-mode footer {
     margin: 0;
-    height: 200px;
+    margin-top: 40px;
+    height: 220px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .footer-content p button,
   .dark-mode .footer-content p button {
@@ -395,6 +434,7 @@ footer .footer-content a {
     position: relative; /* Position relative to its normal position */
     top: -15px; /* Adjust the vertical position */
     left: 10px; /* Adjust the horizontal position */
+    overflow-y: hidden;
   }
   .dark-mode .footer-content p a,
   .footer-content p a{
@@ -403,26 +443,31 @@ footer .footer-content a {
     top:5px;
     left: -90px;
     margin-inline: 80px;
+    overflow-y: hidden;
   }
 
   .intro-container {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 90px;
+    margin-bottom: 50px;
     transform: scale(3);
     max-width: 100%;
     position: relative;
     left: -30px;
+    overflow-y: hidden;
   }
   .projectWrapper {
     transform: scale(1.3);
     margin-top: 200px;
     position: relative;
     left: -30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .projectWrapper .content2 {
-    margin-top: 330px;
+    padding-top: 300px;
     transform: scale(2);
-    margin-bottom: 550px;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .timeline {
     transform: scale(1.4);
@@ -430,10 +475,13 @@ footer .footer-content a {
     margin-bottom: 450px;
     position: relative;
     left: -40px;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .timeline-container.right {
     position: relative;
     margin-top: 15px !important;
+    overflow-y: hidden;
   }
   .TechStack {
     flex-direction: row; /* Stack items vertically */
@@ -442,6 +490,7 @@ footer .footer-content a {
     margin-bottom: 70px;
     position: relative;
     left: -30px;
+    overflow-y: hidden;
   }
   .TechStack ion-icon,
   .TechStack img {
@@ -449,12 +498,21 @@ footer .footer-content a {
     margin-bottom: 10px; /* Add bottom margin for spacing between items */
     margin-top: 10px;
     margin-inline: 20px;
+    overflow-y: hidden;
   }
   .img1, .img2{
     margin-top: 100px;
+    overflow-y: hidden;
   }
   .test2 h1 {
+    position: relative;
     transform: scale(3);
+    overflow-y: hidden;
+    left: -30px;
+  }
+  .test2 .img-small {
+    position: relative;
+    left: -30px;
   }
   .exp {
     position: relative;
@@ -465,17 +523,23 @@ footer .footer-content a {
   .about-text h2 {
     transform: scale(1.4);
     margin-bottom: 15px;
+    overflow-y: hidden;
   }
-  .ball {
-    position: relative;
-    height: 10px !important;
-    width: 300px !important;
+  .timeline-container {
+    overflow-y: hidden;
+  }
+  .pparse {
+    margin-bottom: 400px;
   }
 }
-
+.ball-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .resume-tech-container img {
   border-radius: 30px;
   margin-right: 10px;
+  overflow-y: hidden;
 }
 
 .test h2 {
@@ -609,6 +673,7 @@ footer .footer-content a {
   background-color: #333;
   width: 50%;
   border-radius: 30px;
+  overflow-y: hidden;
 }
 /* Container for the timeline */
 .timeline {
@@ -618,7 +683,6 @@ footer .footer-content a {
   align-items: flex-start;
   position: relative;
   width: 100%;
-  overflow-y: auto;
 }
 
 /* Wrapper to position containers correctly */
@@ -640,6 +704,7 @@ footer .footer-content a {
 }
 .resme{
   margin: 150px;
+  overflow-y: hidden;
 }
 /* Right container */
 .timeline-container.right {
@@ -677,6 +742,7 @@ footer .footer-content a {
   position: relative;
   border-radius: 6px;
   --text-color: #fff;
+  overflow-y: hidden;
 }
 
 .TechStack {
@@ -727,12 +793,6 @@ footer .footer-content a {
   gap:20px;
 }
 
-
-.projimg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .hill-images {
   top: -60px;
@@ -796,6 +856,11 @@ footer .footer-content a {
   width: 50%;
   text-align: center;
   margin-top: 20px;
+  overflow: hidden !important;
+}
+.text p {
+  margin-top: 20px;
+  overflow: visible !important;
 }
 
 
@@ -834,12 +899,14 @@ footer .footer-content a {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 500px;
-  width: 100px; /* Adjust size as needed */
-  height: 4px; /* Adjust size as needed */
+  width: 0.5%; /* Adjust size as needed */
+  height: 0.5%; /* Adjust size as needed */
   background-color: rgb(255, 255, 255); /* Semi-transparent white */
   border-radius: 95%;
   z-index: 0;
-  transform: rotateZ(135deg);
+  transform: rotateZ(45deg);
   transform-origin: center;
+}
+body {
+  width: 780px !important;
 }

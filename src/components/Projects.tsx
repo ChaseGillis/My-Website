@@ -3,7 +3,6 @@ import React from 'react';
 const Projects: React.FC = () => {
   return (
     <div className="projectWrapper">
-      <div className="projimg">
         <div className="hill-images">
           <img src={`${process.env.PUBLIC_URL}/leftHill.png`} alt="Hill 1" className="img1" />
           <img src={`${process.env.PUBLIC_URL}/rightHill.png`} alt="Hill 2" className="img2" />
@@ -20,7 +19,6 @@ const Projects: React.FC = () => {
           <img src={`${process.env.PUBLIC_URL}/PParser.gif`} alt="gif" className="pparse" />
         </div>
       </div>
-    </div>
   );
 };
 
