@@ -200,7 +200,6 @@ nav ul {
   box-sizing: border-box;
   background-color: none;
   position: relative;
-  left: -65px;
   overflow-y: hidden;
 }
 
@@ -448,7 +447,7 @@ footer .footer-content a {
 
   .intro-container {
     margin-top: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 180px;
     transform: scale(3);
     max-width: 100%;
     position: relative;
