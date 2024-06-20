@@ -449,25 +449,10 @@ footer .footer-content a {
     position: relative;
     overflow-y: hidden;
   }
-  .projectWrapper {
-    transform: scale(1.3);
-    margin-top: 20vh;
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-  .projectWrapper .content2 {
-    gap: 0;
-    margin-left: auto;
-    padding-top: 42vh;
-    transform: scale(2);
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
   .timeline {
     transform: scale(1.7);
     margin-top: 75vh;
-    margin-bottom: 95vh;
+    margin-bottom: 85vh;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -493,18 +478,13 @@ footer .footer-content a {
     margin-inline: 18px;
     overflow-y: hidden;
   }
-  .img1, .img2{
-    margin-top: 100px;
-    overflow-y: hidden;
-  }
   .test2 h1 {
     position: relative;
+    align-items: center;
     transform: scale(2.8);
     overflow-y: hidden;
     margin-bottom: 15px;
-  }
-  .test2 .img-small {
-    position: relative;
+    margin-top: 10vh;
   }
   .exp {
     position: relative;
@@ -520,15 +500,50 @@ footer .footer-content a {
   .timeline-container {
     overflow-y: hidden;
   }
-  .pparse {
-    margin-bottom: 85%;
-    max-height: 80vh;
+  .projectWrapper {
+    display: flexbox;
+    transform: scale(1.3);
+    margin-top: 20vh;
+    padding-top: 5vh;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: visible;
+  }
+  .projectWrapper .content2 {
+    margin:0;
+    padding:0;
+    display: flexbox;
+    gap: 0;
+    transform: scale(2);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    left: 50vw;
+  }
+  .projectWrapper .content2 a {
+    display: flexbox;
+    position: relative;
+    overflow: hidden;
+  }
+  .projectWrapper .pparse {
+    display: flexbox;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1000;
+  }
+  .content2 .text {
+    overflow-y: visible;
+    display: flexbox;
+    position: relative;
+    padding-top: 50vh;
+  }
+  .project-info {
+    padding-bottom: 35vh;
+    margin-bottom: 20vh;
   }
 }
-.ball-container {
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
+
 .resume-tech-container img {
   border-radius: 30px;
   margin-right: 10px;
@@ -747,33 +762,7 @@ footer .footer-content a {
 .TechStack:hover {
   filter: drop-shadow(20px 20px 20px white);
 }
-@keyframes coolThing {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg) translate(250px, 0);
-  }
-  18.75% {
-    transform: rotateX(-40deg) rotateY(-20deg) translate(0px, -170px);
-  }
-  37.5% {
-    transform: rotateX(-40deg) rotateY(-20deg) translate(0px, -170px);
-  }
-  56.25% {
-    transform: rotateX(0deg) rotateY(0deg) translate(-250px, 0);
-  }
-  75% {
-    transform: rotateX(-40deg) rotateY(-20deg) translate(0px, -170px);
-  }
-  100% {
-    transform: rotateX(0deg) rotateY(0deg) translate(250px, 0);
-  }
-}
-.test2 img {
-  margin-top: 100px;
-  margin-bottom:0px;
-  width:100px ;
-  height:auto;
-  animation: coolThing 6s steps(200) infinite;
-}
+
 
 .dark-mode .test2 img {
   filter:invert(100%);
@@ -786,36 +775,6 @@ footer .footer-content a {
   gap:20px;
 }
 
-
-.hill-images {
-  top: -60px;
-  gap:39vw;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: relative;
-}
-
-.hill-images img {
-  position: relative;
-}
-
-.img1, .img2 {
-  width: 400px;
-  height: 150px;
-}
-
-.img1 {
-  margin-left: 90px;
-}
-
-.img2 {
-  margin-right: 90px;
-}
-
-.dark-mode .img1, .dark-mode .img2 {
-  filter: invert(100%);
-}
 .content2 {
   margin-left: 5vh;
   display: flex;
@@ -892,19 +851,7 @@ footer .footer-content a {
     width: 100%;
   }
 }
-.ball {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 0.5%; /* Adjust size as needed */
-  height: 0.5%; /* Adjust size as needed */
-  background-color: rgb(255, 255, 255); /* Semi-transparent white */
-  border-radius: 95%;
-  z-index: 0;
-  transform: rotateZ(45deg);
-  transform-origin: center;
-}
+
 body {
   width: 780px !important;
 }

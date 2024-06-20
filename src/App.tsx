@@ -50,7 +50,6 @@ const App: React.FC = () => {
       <Timeline />
       <div className="test2" id="projects">
         <br/><br/><br/>
-        <img src={`${process.env.PUBLIC_URL}/dirtbike.png`} alt="Profile" className="img-small"/>
         <h1>PROJECTS</h1>
       </div>
       <Projects /> <br/> <br/>

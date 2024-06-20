@@ -3,10 +3,6 @@ import React from 'react';
 const Projects: React.FC = () => {
   return (
     <div className="projectWrapper">
-        <div className="hill-images">
-          <img src={`${process.env.PUBLIC_URL}/leftHill.png`} alt="Hill 1" className="img1" />
-          <img src={`${process.env.PUBLIC_URL}/rightHill.png`} alt="Hill 2" className="img2" />
-        </div>
         <div className="content2">
         <div className="text">
             <h2>Precedent Parser</h2>
@@ -16,10 +12,10 @@ const Projects: React.FC = () => {
               ● Developed an interactive prototype with Streamlit to demonstrate this concept for an NYU startup competition
             </p>
           </div>
-          <a href="https://precedent-parser-9862598fa83a.herokuapp.com/" target="_blank">
+          <a href="https://precedent-parser-9862598fa83a.herokuapp.com/" rel="noreferrer">
           <img src={`${process.env.PUBLIC_URL}/PParse Window.png`} alt="win" className="pparse" />
         <div className="project-info">
-            <p>Click the image above to demo!</p>
+            <p><b>Click the image above to demo!</b></p>
         </div>
     </a>
         </div>
