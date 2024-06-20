@@ -16,7 +16,13 @@ const Projects: React.FC = () => {
               ● Developed an interactive prototype with Streamlit to demonstrate this concept for an NYU startup competition
             </p>
           </div>
-          <img src={`${process.env.PUBLIC_URL}/PParser.gif`} alt="gif" className="pparse" />
+          <a href="https://precedent-parser-9862598fa83a.herokuapp.com/" target="_blank">
+          <img src={`${process.env.PUBLIC_URL}/PParse Window.png`} alt="win" className="pparse" />
+        <div class="project-info">
+            <h3>Project Title</h3>
+            <p>Description of the project</p>
+        </div>
+    </a>
         </div>
       </div>
   );
