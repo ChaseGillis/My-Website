@@ -522,6 +522,7 @@ footer .footer-content a {
   }
   .pparse {
     margin-bottom: 85%;
+    max-height: 80vh;
   }
 }
 .ball-container {
