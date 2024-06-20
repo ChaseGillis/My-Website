@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
             <p>
               ● Led a team to create a web scraper and website using Python, aiding legal research for precedent cases<br/><br/>
               ● Utilized Open-AI to search scraped data, providing citations, summaries, probabilities, and case strategies<br/><br/>
-              ● Developed an interactive prototype with Streamlit to demonstrate this concept for an NYU startup competition
+              ● Developed and deployed a working prototype using Streamlit, Heroku, HTML, and CSS to showcase in a startup fair
             </p>
           </div>
           <a href="https://precedent-parser-9862598fa83a.herokuapp.com/" rel="noreferrer">
