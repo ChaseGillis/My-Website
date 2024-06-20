@@ -45,7 +45,7 @@ h2 {
   white-space: nowrap;
   animation: typewriter 5s steps(30) 1s infinite,
     blinkTextCursor 500ms infinite;
-  margin-top: 20px; /* Ensure no extra margin */
+  margin-top: 10vh; /* Ensure no extra margin */
   line-height: 1;  /* Adjust line height to reduce space within the text */
   overflow-y: hidden;
 }
@@ -359,6 +359,9 @@ footer .footer-content a {
     margin-left:auto;
     margin-right:auto;
   }
+  .profile-image img {
+    margin-top: 10vh;
+  }
   .about-container {
     margin-top: 700px;
     margin-bottom: 750px;
@@ -458,7 +461,7 @@ footer .footer-content a {
   }
   .timeline-container.right {
     position: relative;
-    margin-top: 15px !important;
+    margin-top: 15vh !important;
     overflow-y: hidden;
   }
   .TechStack {
@@ -532,6 +535,9 @@ footer .footer-content a {
     overflow-x: hidden;
     z-index: 1000;
   }
+  .pparse:hover {
+    transform: scale(1);
+  }
   .content2 .text {
     overflow-y: hidden;
     display: flexbox;
@@ -540,7 +546,7 @@ footer .footer-content a {
   }
   .project-info {
     padding-bottom: 36vh;
-    margin-bottom: 22vh;
+    margin-bottom: 30vh;
   }
 }
 
@@ -716,7 +722,7 @@ footer .footer-content a {
 }
 /* Right container */
 .timeline-container.right {
-  margin-top: -180px;
+  margin-top: 15vh;
   max-width: 400px;
   max-height: fit-content;
   align-self: flex-start; /* Align to the left of the center line */
