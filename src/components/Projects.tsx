@@ -18,9 +18,8 @@ const Projects: React.FC = () => {
           </div>
           <a href="https://precedent-parser-9862598fa83a.herokuapp.com/" target="_blank">
           <img src={`${process.env.PUBLIC_URL}/PParse Window.png`} alt="win" className="pparse" />
-        <div class="project-info">
-            <h3>Project Title</h3>
-            <p>Description of the project</p>
+        <div className="project-info">
+            <p>Click the image above to demo!</p>
         </div>
     </a>
         </div>

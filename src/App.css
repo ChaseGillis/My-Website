@@ -856,6 +856,9 @@ footer .footer-content a {
   margin-top: 20px;
   overflow: visible !important;
 }
+.project-info {
+  color: var(--text-color);
+}
 
 
 
