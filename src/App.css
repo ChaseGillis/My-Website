@@ -321,6 +321,9 @@ footer .footer-content a {
 .dark-mode .profile-image img {
   border: 3px solid white;
 }
+.profile-image img:hover {
+  border: 3px solid rgb(231, 163, 5);
+}
 .about-text {
   max-width: 600px; /* Limits the width of the text content */
   position: relative;
@@ -453,8 +456,8 @@ footer .footer-content a {
   }
   .timeline {
     transform: scale(1.7);
-    margin-top: 75vh;
-    margin-bottom: 85vh;
+    margin-top: 82vh;
+    margin-bottom: 92vh;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -485,7 +488,7 @@ footer .footer-content a {
     align-items: center;
     transform: scale(2.8);
     overflow-y: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 15vh;
     margin-top: 10vh;
   }
   .exp {
@@ -535,8 +538,8 @@ footer .footer-content a {
     overflow-x: hidden;
     z-index: 1000;
   }
-  .pparse:hover {
-    transform: scale(1);
+  .projectWrapper .pparse:hover {
+    transform: none;
   }
   .content2 .text {
     overflow-y: hidden;
@@ -809,6 +812,7 @@ footer .footer-content a {
 }
 
 .pparse:hover {
+  border: 2px solid rgb(231, 163, 5);
   transform: scale(1.2);
 }
 
