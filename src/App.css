@@ -81,7 +81,6 @@ body {
   min-width: 100% !important;
   max-width: 100% !important;
   background-color: var(--background-color); /* Instead of a hardcoded value */
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,11 +101,11 @@ footer footer {
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   color: var(--text-color);
   text-align: center;
   background-color: var(--background-color);
   overflow-x: hidden;
+  overflow-y: hidden;
   background-image: url('/public/Sky.png');
   background-size: cover; 
 }
@@ -503,8 +502,8 @@ footer .footer-content a {
   .projectWrapper {
     display: flexbox;
     transform: scale(1.3);
-    margin-top: 20vh;
-    padding-top: 5vh;
+    margin-top: 21vh;
+    padding-top: 7vh;
     margin-left: 40vw;
     margin-right: 40vw;
     position: relative;
@@ -518,7 +517,7 @@ footer .footer-content a {
     gap: 0;
     transform: scale(2);
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: visible;
     left: 50vw;
   }
   .projectWrapper .content2 a {
@@ -529,18 +528,19 @@ footer .footer-content a {
   .projectWrapper .pparse {
     display: flexbox;
     position: relative;
+    overflow-y: hidden;
     overflow-x: hidden;
     z-index: 1000;
   }
   .content2 .text {
-    overflow-y: visible;
+    overflow-y: hidden;
     display: flexbox;
     position: relative;
     padding-top: 50vh;
   }
   .project-info {
-    padding-bottom: 35vh;
-    margin-bottom: 20vh;
+    padding-bottom: 36vh;
+    margin-bottom: 22vh;
   }
 }
 
