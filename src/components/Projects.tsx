@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
               ● Developed and deployed a working prototype using Streamlit, Heroku, HTML, and CSS to showcase in a startup fair
             </p>
           </div>
-          <a href="https://precedent-parser-9862598fa83a.herokuapp.com/" rel="noreferrer">
+          <a href="https://precedent.streamlit.app/" rel="noreferrer">
           <img src={`${process.env.PUBLIC_URL}/PParse Window.png`} alt="win" className="pparse" />
         <div className="project-info">
             <p><b>Click the image above to demo!</b></p>
