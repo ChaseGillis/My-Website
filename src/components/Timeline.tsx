@@ -12,7 +12,7 @@ const Timeline: React.FC = () => {
           <div className="timeline-container left">
               <div className="content">
                   <h2>U.S. CENTURY BANK</h2>
-                  <h3><i>Software Engineering Intern</i></h3><br/>
+                  <h3><i>Software Engineer & Data Scientist Consultant</i></h3><br/>
                   <p>● Designed profitability model using SQL, Python, and Power BI to rank accounts and suggest changes, increasing revenue<br/><br/>
                     ● Built a cybersecurity system that periodically verifies file integrity using hash comparisons and sends alerts of tampering<br/><br/>
                     ● Developed Python-based archive system to relocate files older than a specified date, optimizing system performance</p>
@@ -49,15 +49,19 @@ const Timeline: React.FC = () => {
               </div>
           <img src={`${process.env.PUBLIC_URL}/fish.png`} alt="fish" className="fish" /></div>
       </div><div className="TechStack">
+        <div className="techHalf">
               <ion-icon name="logo-python" title="Python"></ion-icon>
               <img src={`${process.env.PUBLIC_URL}/Java icon.svg`} alt="Java Icon" />
+              <img src={`${process.env.PUBLIC_URL}/C++.png`} alt="C++ Icon" />
               <ion-icon name="logo-javascript" title="JavaScript"></ion-icon>
               <img src={`${process.env.PUBLIC_URL}/sql icon.png`} alt="SQL Icon" />
+              </div>
+              <div className="techHalf">
               <ion-icon name="logo-html5" title="HTML5"></ion-icon>
               <ion-icon name="logo-css3" title="CSS3"></ion-icon>
               <ion-icon name="logo-react" title="React"></ion-icon>
               <ion-icon name="logo-nodejs" title="Node.js"></ion-icon>
-              <ion-icon name="logo-tux" title="Linux"></ion-icon>
+              <ion-icon name="logo-tux" title="Linux"></ion-icon></div>
           </div></>
   );
 };
