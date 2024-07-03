@@ -534,10 +534,10 @@ footer .footer-content a {
     align-self: center;
     transform: scale(2.3);
     left: -4vh;
-    margin-top: 113vh;
+    margin-top: 123vh;
     position: relative;
     overflow-x: visible;
-    padding-bottom: 55vh;
+    padding-bottom: 75vh;
     gap: 100px !important;
   }
   .content2 .text {
@@ -731,12 +731,14 @@ footer .footer-content a {
 }
 .timeline-container.left h2{
   color: #fff;
+  -webkit-text-stroke: 1px white;
 }
 .timeline-container.right h3{
   color: #fff;
 }
 .timeline-container.right h2{
   color: #fff;
+  -webkit-text-stroke: 1px white;
 }
 .timeline-container.left p {
   text-align: left;
