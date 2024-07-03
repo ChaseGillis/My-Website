@@ -23,7 +23,7 @@ const Timeline: React.FC = () => {
               <h2>NYU 404 FITNESS</h2>
                   <h3><i>Supervisor and Data Scientist</i></h3>
                   <p><br/>● Optimized gym hours and staffing schedules using Python, Pandas, and Excel, aligning with budget constraints<br/><br/>
-                        ● Initiated anti-theft campaign, reducing theft by up to 50% through strategic signage and staff rotation<br/><br/>
+                        ● Initiated an anti-theft campaign, reducing theft by up to 50% through strategic signage and staff rotation<br/><br/>
                         ● Selected as the youngest-ever supervisor to coordinate a team of 50+ attendants, handling hiring and scheduling</p>
               </div></div>
               <div className="timeline-container left">
@@ -36,7 +36,7 @@ const Timeline: React.FC = () => {
                     <div className="content">
           <h2>TECH@NYU</h2>
                   <h3><i>Project Lead</i></h3>
-                  <p><br/>● Mentored 12 students (5% acceptance rate) in four software engineering projects, enhancing programming skills<br/><br/>
+                  <p><br/>● Mentored a 12-student cohort (5% acceptance rate) in four software engineering projects, enhancing programming skills<br/><br/>
                           ● Initiated development of a website to archive and showcase past projects, fostering community and alumni engagement<br/><br/>
                           ● Organized office visits to companies like Epic Games and Netflix for practical learning experiences</p></div>
 </div>
