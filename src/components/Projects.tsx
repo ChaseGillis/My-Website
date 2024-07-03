@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
           <h2>Pairwise Trading Algorithm and Engine</h2>
           <p>
             ● Developed Full-Stack trading engine and strategy using correlation, cointegration, stationarity, Alpaca API, and Streamlit<br/><br/>
-            ● Created visualizations for price ratios, moving averages, z-scores, and cumulative returns that average 30%
+            ● Created visualizations for price ratios, dynamic moving averages, z-scores, and cumulative returns that average 15%
           </p>
         </div>
       </div>
