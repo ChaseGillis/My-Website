@@ -34,7 +34,20 @@ const Projects: React.FC = () => {
           </p>
         </div>
       </div>
-    </div>
+
+      <div className="content2">
+        <div className="text">
+          <h2>Bicoin Forecast LSTM Model</h2>
+          <p>
+            ● Designed an LSTM neural network model to predict Bitcoin prices and ROI for a tournament hosted by Trilemma Capital<br/><br/>
+            ● Trained my model on historical closing prices, optimized with Adam and mean squared error loss function over 100 epochs
+          </p>
+        </div>
+        <a href="https://github.com/ChaseGillis/LSTM-Model" rel="noreferrer">
+          <img src={`${process.env.PUBLIC_URL}/bitcoin.png`} alt="win" className="pparse" />
+        </a>
+      </div>
+      </div>
   );
 };
 
