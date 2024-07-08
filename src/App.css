@@ -530,14 +530,14 @@ footer .footer-content a {
   }
   .projectWrapper {
     display: flexbox;
-    margin:auto;
+    margin: auto;
     align-self: center;
     transform: scale(2.3);
     left: -4vh;
-    margin-top: 205vh;
+    margin-top: 240vh;
     position: relative;
     overflow-x: visible;
-    padding-bottom: 115vh;
+    padding-bottom: 125vh;
     gap: 100px !important;
   }
   .content2 .text {
