@@ -41,7 +41,7 @@ const App: React.FC = () => {
         scrollToBottom={scrollToBottom} 
       /></header>
       <div className="intro-container">
-        <h1 className="INTRO"><b>CHASE GILLIS</b></h1></div>
+        <h1 className="INTRO"><b>CHASE GILLIS  </b></h1></div>
         <br/>
       <AboutMe />
       <br/>
