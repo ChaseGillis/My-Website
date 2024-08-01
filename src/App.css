@@ -63,13 +63,13 @@ h2 {
 
 @keyframes typewriter {
   0% {
-    width: 0px;
+    width: 0ch;
   }
   50% {
-    width: 400px;
+    width: 15ch;
   }
   100% {
-    width: 400px;
+    width: 15ch;
   }
 }
 @keyframes blinkTextCursor {

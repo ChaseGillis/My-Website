@@ -27,12 +27,20 @@ const Timeline: React.FC = () => {
                         ● Selected as the youngest-ever supervisor to coordinate a team of 50+ attendants, handling hiring and scheduling</p>
               </div></div>
               <div className="timeline-container left">
+                    <div className="content">
+          <h2>JPMorgan Chase & Co. Virtual Experience Program</h2>
+                  <h3><i>Quantitative Researcher</i></h3>
+                  <p><br/>● Completed a simulation on quantitative research methods, data analysis, and predictive modeling in a real-world context<br/><br/>
+                          ● Analyzed loan data to estimate a customer’s probability of default using logistic regression, enhancing risk assessment<br/><br/>
+                          ● Applied dynamic programming, log-likelihood, and MSE models to categorize FICO scores for default prediction</p></div>
+</div>
+              <div className="timeline-container right">
               <div className="content">
           <h2>SCALE AI</h2>
                   <h3><i>Software Engineer - AI Consultant</i></h3>
                   <p><br/>● Conducted reviews of AI-generated content and code, ensuring compliance with company standards<br/><br/>
                         ● Enhanced AI models by identifying efficient algorithms in AI-generated code, improving content accuracy</p></div></div>
-                    <div className="timeline-container right">
+                    <div className="timeline-container left">
                     <div className="content">
           <h2>TECH@NYU</h2>
                   <h3><i>Project Lead</i></h3>
@@ -40,13 +48,14 @@ const Timeline: React.FC = () => {
                           ● Initiated development of a website to archive and showcase past projects, fostering community and alumni engagement<br/><br/>
                           ● Organized office visits to companies like Epic Games and Netflix for practical learning experiences</p></div>
 </div>
-                    <div className="timeline-container left">
+                    <div className="timeline-container right">
                     <div className="content">
           <h2>LYFT FORAGE JOB SIMULATION</h2>
                   <h3><i>Back-End Software Engineer</i></h3>
                   <p><br/>● Refactored a complex codebase, drafting a UML class diagram for system reorganization<br/><br/>
                           ● Implemented unit tests and added tire-wear detection for service decisions using test-driven development</p></div>
               </div>
+              
           <img src={`${process.env.PUBLIC_URL}/fish.png`} alt="fish" className="fish" /></div>
       </div><div className="TechStack">
         <div className="techHalf">
