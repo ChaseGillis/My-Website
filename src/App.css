@@ -473,8 +473,8 @@ footer .footer-content a {
   /* Right here for timeline spacing!! */
   .timeline {
     transform: scale(1.7);
-    margin-top:102vh;
-    margin-bottom: 112vh;
+    margin-top:108vh;
+    margin-bottom: 118vh;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
