@@ -66,10 +66,10 @@ h2 {
     width: 0ch;
   }
   50% {
-    width: 15ch;
+    width: 16ch;
   }
   100% {
-    width: 15ch;
+    width: 16ch;
   }
 }
 @keyframes blinkTextCursor {
@@ -470,10 +470,11 @@ footer .footer-content a {
     position: relative;
     overflow-y: hidden;
   }
+  /* Right here for timeline spacing!! */
   .timeline {
     transform: scale(1.7);
-    margin-top: 82vh;
-    margin-bottom: 92vh;
+    margin-top: 90vh;
+    margin-bottom: 100vh;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
