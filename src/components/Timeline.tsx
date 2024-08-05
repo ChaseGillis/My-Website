@@ -12,34 +12,34 @@ const Timeline: React.FC = () => {
           <div className="timeline-container left">
               <div className="content">
                   <h2>U.S. CENTURY BANK</h2>
-                  <h3><i>Software Engineer & Data Scientist Consultant</i></h3><br/>
-                  <p>● Designed profitability model using SQL, Python, and Power BI to rank accounts and suggest changes, increasing revenue<br/><br/>
-                    ● Built a cybersecurity system that periodically verifies file integrity using hash comparisons and sends alerts of tampering<br/><br/>
-                    ● Developed Python-based archive system to relocate files older than a specified date, optimizing system performance</p>
+                  <h3><i>Software Engineer & Data Scientist</i></h3><br/>
+                  <p>● Designed a profitability model using SQL, Python, and Power BI ranking accounts and recommending changes to boost revenue<br/><br/>
+                    ● Developed a cybersecurity system for file integrity verification through hash comparisons, with alert mechanisms for tampering<br/><br/>
+                    ● Implemented archive system in Python to relocate files older than a specified date, enhancing system performance and efficiency</p>
               </div>
               </div>
               <div className="timeline-container right">
               <div className="content">
-              <h2>NYU 404 FITNESS</h2>
-                  <h3><i>Supervisor and Data Scientist</i></h3>
-                  <p><br/>● Optimized gym hours and staffing schedules using Python, Pandas, and Excel, aligning with budget constraints<br/><br/>
-                        ● Initiated an anti-theft campaign, reducing theft by up to 50% through strategic signage and staff rotation<br/><br/>
-                        ● Selected as the youngest-ever supervisor to coordinate a team of 50+ attendants, handling hiring and scheduling</p>
+              <h2>JPMORGAN CHASE & CO. VIRTUAL EXPERIENCE PROGRAM</h2>
+                  <h3><i>Quantitative Researcher</i></h3>
+                  <p><br/>● Built a natural gas price forecast model, combining linear and sinusoidal regression for trend visualization and price estimation<br/><br/>
+                        ● Priced a commodity storage contract by analyzing trading schedules, fees, cash flow and capacity to optimize contract value<br/><br/>
+                        ● Estimated default probabilities and bucketed FICO scores using logistic regression and MSE models to enhance risk assessment</p>
               </div></div>
               <div className="timeline-container left">
                     <div className="content">
-          <h2>JPMorgan Chase & Co. Virtual Experience Program</h2>
-                  <h3><i>Quantitative Researcher</i></h3>
-                  <p><br/>● Completed a simulation on quantitative research methods, data analysis, and predictive modeling in a real-world context<br/><br/>
-                          ● Analyzed loan data to estimate a customer’s probability of default using logistic regression, enhancing risk assessment<br/><br/>
-                          ● Applied dynamic programming, log-likelihood, and MSE models to categorize FICO scores for default prediction</p></div>
+          <h2>NYU 404 FITNESS</h2>
+                  <h3><i>Supervisor & Data Scientist</i></h3>
+                  <p><br/>● Optimized gym hours and staffing with Python and Pandas, aligning schedules with budget constraints and operational needs<br/><br/>
+                          ● Reduced theft by ~75% through a strategic anti-theft campaign involving improved signage and staff rotation<br/><br/>
+                          ● Led a team of 50+ attendants as the youngest supervisor, managing hiring, training, and scheduling responsibilities</p></div>
 </div>
               <div className="timeline-container right">
               <div className="content">
           <h2>SCALE AI</h2>
                   <h3><i>Software Engineer - AI Consultant</i></h3>
-                  <p><br/>● Conducted reviews of AI-generated content and code, ensuring compliance with company standards<br/><br/>
-                        ● Enhanced AI models by identifying efficient algorithms in AI-generated code, improving content accuracy</p></div></div>
+                  <p><br/>● Enhanced AI model performance by identifying and implementing efficient algorithms, improving content generation accuracy<br/><br/>
+                        ● Conducted reviews of AI-generated content and code, ensuring compliance with company standards</p></div></div>
                     <div className="timeline-container left">
                     <div className="content">
           <h2>TECH@NYU</h2>

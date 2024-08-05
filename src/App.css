@@ -721,7 +721,7 @@ footer .footer-content a {
 }
 /* Right container */
 .timeline-container.right {
-  margin-top: 15vh;
+  margin-top: 0vh;
   max-width: 400px;
   max-height: fit-content;
   align-self: flex-start; /* Align to the left of the center line */
