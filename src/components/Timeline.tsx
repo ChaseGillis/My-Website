@@ -13,33 +13,33 @@ const Timeline: React.FC = () => {
               <div className="content">
                   <h2>U.S. CENTURY BANK</h2>
                   <h3><i>Software Engineer & Data Scientist</i></h3><br/>
-                  <p>● Designed a profitability model using SQL, Python, and Power BI ranking accounts and recommending changes to boost revenue<br/><br/>
-                    ● Developed a cybersecurity system for file integrity verification through hash comparisons, with alert mechanisms for tampering<br/><br/>
-                    ● Implemented archive system in Python to relocate files older than a specified date, enhancing system performance and efficiency</p>
+                  <p>● Designed a profitability model using SQL, Python, and Power BI to rank accounts and advise changes, boosting revenue by 10%<br/><br/>
+                    ● Developed a cybersecurity system for file integrity verification through hash comparisons, detecting tampering in ~1% of files<br/><br/>
+                    ● Implemented Python archive system to relocate files older than 7 years, freeing 1 TB of disk space in a day, boosting efficiency</p>
               </div>
               </div>
               <div className="timeline-container right">
               <div className="content">
               <h2>JPMORGAN CHASE & CO. VIRTUAL EXPERIENCE PROGRAM</h2>
                   <h3><i>Quantitative Researcher</i></h3>
-                  <p><br/>● Built a natural gas price forecast model, combining linear and sinusoidal regression for trend visualization and price estimation<br/><br/>
-                        ● Priced a commodity storage contract by analyzing trading schedules, fees, cash flow and capacity to optimize contract value<br/><br/>
-                        ● Estimated default probabilities and bucketed FICO scores using logistic regression and MSE models to enhance risk assessment</p>
+                  <p><br/>● Built a natural gas price forecast model, merging linear and sinusoidal regression for trend visualization, achieving 90% accuracy<br/><br/>
+                        ● Priced a commodity storage contract by analyzing trading schedules, fees, and cash flow, optimizing contract value by 10%<br/><br/>
+                        ● Estimated default probabilities and bucketed FICO scores using logistic regression and MSE, improving risk assessment by 10%</p>
               </div></div>
               <div className="timeline-container left">
                     <div className="content">
           <h2>NYU 404 FITNESS</h2>
                   <h3><i>Supervisor & Data Scientist</i></h3>
                   <p><br/>● Optimized gym hours and staffing with Python and Pandas, aligning schedules with budget constraints and operational needs<br/><br/>
-                          ● Reduced theft by ~75% through a strategic anti-theft campaign involving improved signage and staff rotation<br/><br/>
-                          ● Led a team of 50+ attendants as the youngest supervisor, managing hiring, training, and scheduling responsibilities</p></div>
+                          ● Reduced theft by ~75% through a strategic anti-theft campaign involving improved signage, rotation timing, and staff relocation<br/><br/>
+                          ● Led a team of 50 attendants as the youngest supervisor; duties included managing hiring/training, scheduling, and enforcing rules</p></div>
 </div>
               <div className="timeline-container right">
               <div className="content">
           <h2>SCALE AI</h2>
                   <h3><i>Software Engineer - AI Consultant</i></h3>
-                  <p><br/>● Enhanced AI model performance by identifying and implementing efficient algorithms, improving content generation accuracy<br/><br/>
-                        ● Conducted reviews of AI-generated content and code, ensuring compliance with company standards</p></div></div>
+                  <p><br/>● Reviewed AI-generated code in various languages for compliance with company standards, ensuring quality and accuracy<br/><br/>
+                        ● Enhanced AI model performance by implementing efficient algorithms, improving content generation accuracy by ~12%</p></div></div>
                     <div className="timeline-container left">
                     <div className="content">
           <h2>TECH@NYU</h2>

@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
         <div className="text">
           <h2>Bicoin Forecast LSTM Model</h2>
           <p>
-            ● Built an LSTM neural network model to predict Bitcoin prices and ROI for a tournament hosted by Trilemma Capital<br/><br/>
+            ● Built an LSTM neural network model to predict Bitcoin prices and ROI, finishing top 25% of the Trilemma Capital tournament<br/><br/>
             ● Trained and optimized the model on historical closing prices using Adam optimizer and MSE loss function over 100 epochs
           </p>
         </div>
@@ -20,9 +20,8 @@ const Projects: React.FC = () => {
         <div className="text"> {/* Move text div to the right side of the image */}
           <h2>Pairwise Trading Algorithm and Engine</h2>
           <p>
-            ● Developed Full-Stack trading engine using correlation, cointegration, and stationarity; integrated with Alpaca API and Streamlit<br/><br/>
-            ● Created dynamic visualizations for price ratios, moving averages, and z-scores, achieving an average Sharpe Ratio of 1.48
-          </p>
+            ● Developed Full-Stack backtesting engine with Alpaca API and Streamlit using correlation, cointegration, and stationarity<br/><br/>
+            ● Created visualizations for price ratios, moving averages, and z-scores; achieved Sharpe Ratio of 1.48 with consistent returns</p>
         </div>
         <a href="https://alg-trading.streamlit.app/" rel="noreferrer">
           <img src={`${process.env.PUBLIC_URL}/alg-trading.png`} alt="win" className="pparse" />
